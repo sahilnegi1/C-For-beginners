@@ -1,0 +1,14 @@
+using System;
+class Prog
+{ static void change(ref int a)
+{
+  a=122;
+}
+public static void Main(string [] args)
+{
+  int id =19;
+  Console.WriteLine("id before calling method = "+id);
+  Prog.change(ref id);
+  Console.WriteLine("id after calling method = "+id); 
+}
+}
