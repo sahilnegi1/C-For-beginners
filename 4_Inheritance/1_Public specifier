@@ -1,7 +1,19 @@
 using System;
-class prog{
+class Animal
+{
+    public string color="White";
+    public string type ="Dog";
+    public void eat()
+    {
+        Console.WriteLine("Eating");
+    }
+}
+class prog:Animal
+{
 public static void Main(string[] args)
 {
-Console.WriteLine("hi");
+Animal obj = new Animal();
+  Console.Write(obj.color+" "+obj.type+" ");
+   obj.eat();
 }
 }
