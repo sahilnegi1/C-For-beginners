@@ -1,0 +1,21 @@
+using System;
+class Prog
+{int id;
+public Prog(Prog obj)
+    {
+        this.id=obj.id;
+         Console.WriteLine("this is inside Copy constructor and id = "+id);
+    }
+    public Prog(int id)
+    {   
+        this.id=id;
+         Console.WriteLine("this is inside Parameterized constructor and id = "+id);
+    }
+    public static void Main(string[] args)
+    {
+      
+        Prog obj= new Prog(10); //Parameterized constructor
+          Prog obj2 = new Prog(obj);
+        Console.WriteLine("This is inside Main");
+    }
+}
