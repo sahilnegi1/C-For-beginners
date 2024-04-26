@@ -1,0 +1,20 @@
+using System;
+class Prog
+{
+    public Prog()
+    {   
+        
+         Console.WriteLine("this is inside Deafult constructor ");
+    }
+    ~Prog()
+    {
+        Console.WriteLine("Destructor Called automatically");
+    }
+    public static void Main(string[] args)
+    {
+      
+    
+          Prog obj2 = new Prog();
+        Console.WriteLine("This is inside Main");
+    }
+}
