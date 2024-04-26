@@ -1,0 +1,15 @@
+using System;
+class Prog
+{ static void change(int a)
+{
+  a=122;
+}
+public static void Main(string [] args)
+{
+  int id =19;
+  Console.WriteLine("id before calling method = "+id);
+  Prog.change(id);
+  Console.WriteLine("id after calling method = "+id); // no changes happen at id
+  
+}
+}
