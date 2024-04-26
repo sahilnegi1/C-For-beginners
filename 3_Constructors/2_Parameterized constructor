@@ -1,0 +1,19 @@
+using System;
+class Prog
+{int id;
+public Prog()
+    {
+        Console.WriteLine("This is default constructor");
+    }
+    public Prog(int id)
+    {   Console.WriteLine("This is Parameterized constructor");
+        this.id=id;
+         Console.WriteLine(id);
+    }
+    public static void Main(string[] args)
+    {
+        Prog obj = new Prog();
+        Prog obj2= new Prog(10); //Parameterized constructor
+        Console.WriteLine("hi");
+    }
+}
