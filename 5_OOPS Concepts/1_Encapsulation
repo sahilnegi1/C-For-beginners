@@ -1,9 +1,53 @@
 using System;
 
-class prog
+class Employee
 {
-public static void Main(string[] args)
-{
+    private int emp_id;
+    private string emp_name;
+    private int emp_salary;
 
+    public int id
+    {
+        set
+        {
+            if (value >= 0)
+                emp_id = value;
+            else
+                Console.WriteLine("id can not be negative");
+        }
+        get
+        {
+            return this.emp_id;
+        }
+    }
+    
+    public string name
+    {
+        set{
+            if (!string.IsNullOrEmpty(value)) // Check for an empty string or null
+            emp_name = value;
+            else
+            Console.WriteLine("Name can not be empty");
+        }
+        get{
+            return this.emp_name;
+        }
+    }
 }
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Employee emp1 = new Employee();
+         Console.Write("Enter Employee ID = ");
+        int id = Convert.ToInt32(Console.ReadLine());
+        emp1.id =id;
+        Console.WriteLine("Employee ID = "+emp1.id);
+        
+        Console.Write("Enter Employee Name = ");
+        string Name = Console.ReadLine();
+        emp1.name =Name;
+        Console.WriteLine("Employee Name = "+emp1.name);
+    }
 }
