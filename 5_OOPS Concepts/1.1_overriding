@@ -1,0 +1,28 @@
+using System;
+class Learn
+{
+       public virtual void calculate(int a,int b)
+    {
+        Console.WriteLine(a+b);
+    }
+}
+class Prog:Learn
+{
+    public override void calculate(int a , int b)
+    {
+        int c=a*b;
+        Console.WriteLine("child class = "+c);
+    }
+}
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Hello World");
+   Learn obj = new Learn();
+   Prog obj1 = new Prog();
+   Learn obj2 = new Prog();
+   obj2.calculate(10,10);
+   obj.calculate(10,10);
+   obj1.calculate(10,10);
+  
+  }
+}
