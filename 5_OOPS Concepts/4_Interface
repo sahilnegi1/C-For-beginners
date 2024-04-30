@@ -1,0 +1,21 @@
+using System;
+
+interface Learn
+{
+    void Display();
+}
+class Prog:Learn
+{
+   public void Display()
+    {
+        Console.WriteLine("this is define of Interface :> <: ");
+    } 
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+     Prog obj = new Prog();
+     obj.Display();
+    }
+}
