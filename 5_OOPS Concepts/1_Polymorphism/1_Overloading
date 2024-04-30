@@ -1,0 +1,35 @@
+Polymorphism
+
+function overloading
+
+using System;
+class Learn
+{
+    public static void calculate(int a)
+    {
+        Console.WriteLine(a);
+    }
+    public static void calculate(int a,int b)
+    {
+        Console.WriteLine(a+b);
+    }
+    public static void calculate(int a,int b,int c)
+    {
+        Console.WriteLine(a+b+c);
+    }
+    public static void calculate(float a)
+    {
+        Console.WriteLine(a*a);
+    }
+}
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Hello World");
+    Learn.calculate(10);
+    Learn.calculate(10+10);
+    Learn.calculate(10+10+10);
+    Learn.calculate(10.00f);
+    
+  
+  }
+}
