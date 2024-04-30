@@ -1,0 +1,41 @@
+using System;
+public abstract class Shape
+{
+    // Static method to calculate area of a rectangle
+    public static double Area(double length, double width)
+    {
+        return length * width;
+    }
+
+    // Static method to calculate area of a circle
+    public static double Area(double radius)
+    {
+        return Math.PI * radius * radius;
+    }
+
+    // Abstract method to get the name of the shape
+    public abstract string GetName();
+}
+
+public class Rectangle : Shape
+{
+    // Implementation of the abstract method to get the name of the shape
+    public override string GetName()
+    {
+        return "Rectangle";
+    }
+}
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Calculate area of a rectangle
+        double rectangleArea = Shape.Area(5, 4);
+        Shape o1 = new Rectangle();
+        Console.WriteLine(o1.GetName());
+        Console.WriteLine($"Area of Rectangle: {rectangleArea}");
+
+           }
+}
