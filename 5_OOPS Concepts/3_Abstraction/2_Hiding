@@ -1,0 +1,26 @@
+using System;
+abstract class Prog{
+    public static void Display()
+    {
+        Console.WriteLine("This is Display Function >");
+    }
+    
+    
+}
+class Learn
+{
+    public new static void Display()
+    {
+        Console.WriteLine("This is Hidden Display Function >");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+      Prog.Display();
+      Learn.Display();
+
+    }
+}
