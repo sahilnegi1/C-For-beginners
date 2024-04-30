@@ -1,0 +1,34 @@
+using System;
+abstract class Calc
+{
+    public static void Area(int r)
+    {
+        Console.WriteLine(r*r);
+    }
+    public static void Area(int l,int b)
+    {
+        Console.WriteLine(l*b);
+    }
+    
+    public abstract void getname();
+}
+class Learn:Calc
+{
+    public override void getname()
+    {
+        Console.WriteLine("this is overriden :)");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+      Calc.Area(10);
+      Calc.Area(2,10);
+      
+      Calc obj = new Learn();
+      obj.getname();
+
+    }
+}
