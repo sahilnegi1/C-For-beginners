@@ -1,0 +1,44 @@
+//Below code is overriding all the function
+//To seal the function we will use Sealed Keyword GOTO 2<------
+
+using System;
+class Learn
+{
+    public virtual void display()
+    {
+        Console.WriteLine("hello 1 this is Learn class");
+    }
+}
+class Prog:Learn
+{
+    public override void display()
+    {
+        Console.WriteLine("helloo 2 this is prog class");
+    }
+}
+class Student:Prog{
+    public override void display()
+    {
+        Console.WriteLine("helloo 3 this is Student class");
+    }
+}
+class HelloWorld {
+  static void Main() {
+Learn obj = new Prog();
+obj.display();
+Prog obj1 = new Student();
+obj1.display();
+}
+}
+
+---> 2 Added sealed 
+
+class Prog:Learn
+{
+    public sealed override void display()
+    {
+        Console.WriteLine("helloo 2 this is prog class");
+    }
+}
+
+// above code will not allow to override the function display
