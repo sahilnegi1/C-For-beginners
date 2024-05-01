@@ -1,0 +1,12 @@
+using System;
+
+class HelloWorld {
+  static void Main() {
+    string s1="sahil";
+    string s2="negi";
+    
+    Console.WriteLine(s1.StartsWith("s"));
+    Console.WriteLine(s1.EndsWith("i"));
+    
+  }
+}
