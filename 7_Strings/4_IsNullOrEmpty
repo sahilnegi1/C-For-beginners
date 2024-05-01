@@ -1,0 +1,14 @@
+using System;
+
+class HelloWorld {
+  static void Main() {
+    string s1;
+   Console.WriteLine("Enter the age = ");
+   s1=Console.ReadLine();
+   if(string.IsNullOrEmpty(s1))
+   {
+       Console.WriteLine("Age cannot be null!");
+   }
+    
+  }
+}
