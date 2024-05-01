@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+SortedSet <string> name = new SortedSet<string>(); // SortedSet maintains ascending order
+
+    name.Add("sahil");
+    name.Add("aman");
+    name.Add("sa");
+    name.Add("aman");// duplicate will not be store
+    name.Add("hil");
+    name.Add("sahil"); // duplicate will not be store
+
+
+
+Console.WriteLine("Sortedset Contains: ");  
+foreach(string unik in name)
+{
+    Console.WriteLine(unik);
+}
+
+
+    }
+
+    }
