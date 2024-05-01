@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+Queue <string> name = new Queue<string>(); 
+
+    name.Enqueue("sahil");
+    name.Enqueue("aman");
+    name.Enqueue("RAJ");
+    name.Enqueue("Zoya");
+    name.Enqueue("Vishal");
+    name.Enqueue("MAYA"); 
+
+
+// name.Dequeue();
+// Console.WriteLine(name.Peek());
+Console.WriteLine("Queue Contains = ");
+foreach(string unik in name)
+{
+    Console.WriteLine(unik);
+}
+
+
+
+    }
+
+    }
