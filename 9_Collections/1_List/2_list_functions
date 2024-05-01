@@ -1,22 +1,38 @@
-using System;  
+using System;
 using System.Collections.Generic;
-public class Prog 
-{  
-     
-    public static void Main(string[] args)  
-    {  
-     List <string> name = new List<string>();
-     
-         name.Add("sahil");
-         name.Add("aman");
-         name.Add("sa");
-         name.Add("hil");
-       
-     Console.WriteLine(name.Contains("sahil"));
-     
-     foreach (string nm in name){
-         Console.WriteLine(nm);
-     }
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+List <string> name = new List<string>();
+
+    name.Add("sahil");
+    name.Add("aman");
+    name.Add("sa");
+    name.Add("hil");
+
+    Console.WriteLine(name.Contains("sahil")); // 1
+
+    Console.WriteLine();
+    Console.WriteLine("sorting and inserting maya in the list below");
+    
+    name.Insert(3,"Maya");//2
+    name.Sort(); // 3
+    foreach (string nm in name){
+    Console.WriteLine(nm);
     }
-        
-    }  
+    
+    Console.WriteLine();
+    Console.WriteLine("reversing and removing maya the list below");
+    
+    name.Remove("Maya"); //4
+    name.Reverse(); // 5
+    foreach (string nm in name){
+    Console.WriteLine(nm);
+    }
+
+
+    }
+
+    }
