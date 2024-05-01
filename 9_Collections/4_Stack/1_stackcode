@@ -6,7 +6,7 @@ public class Prog
 
 public static void Main(string[] args)
 {
-Stack <string> name = new Stack<string>(); // SortedSet maintains ascending order
+Stack <string> name = new Stack<string>(); 
 
     name.Push("sahil");
     name.Push("aman");
