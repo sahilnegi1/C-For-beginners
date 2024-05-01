@@ -1,0 +1,22 @@
+using System;  
+using System.Collections.Generic;
+public class Prog 
+{  
+     
+    public static void Main(string[] args)  
+    {  
+     List <string> name = new List<string>();
+     
+         name.Add("sahil");
+         name.Add("aman");
+         name.Add("sa");
+         name.Add("hil");
+       
+     
+     
+     foreach (string nm in name){
+         Console.WriteLine(nm);
+     }
+    }
+        
+    }  
