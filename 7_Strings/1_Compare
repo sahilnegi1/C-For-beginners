@@ -1,0 +1,13 @@
+using System;
+
+class HelloWorld {
+  static void Main() {
+    string s1="sahil";
+    string s2="negi";
+    
+    Console.WriteLine(string.Compare(s1,s2));
+  }
+}
+
+
+//if same then 0 else 1
