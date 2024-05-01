@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+HashSet <string> name = new HashSet<string>(); // HashSet contains only unique value
+
+    name.Add("sahil");
+    name.Add("aman");
+    name.Add("sa");
+    name.Add("hil");
+    name.Add("sahil"); // duplicate will not be inserted
+
+
+
+Console.WriteLine("Hashset Contains: ");  
+foreach(string unik in name)
+{
+    Console.WriteLine(unik);
+}
+
+Console.WriteLine();
+    
+List <string> sorthash = name.ToList();
+sorthash.Sort();
+
+Console.WriteLine("Sorted Hashset List Contains: ");  
+foreach(string unik in sorthash)
+{
+    Console.WriteLine(unik);
+}
+
+
+    }
+
+    }
