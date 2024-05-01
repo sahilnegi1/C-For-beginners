@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+Stack <string> name = new Stack<string>(); // SortedSet maintains ascending order
+
+    name.Push("sahil");
+    name.Push("aman");
+    name.Push("RAJ");
+    name.Push("Zoya");
+    name.Push("Vishal");
+    name.Push("MAYA"); 
+
+ Console.WriteLine("Converting Stack to Array = ");
+string [] arr = name.ToArray();
+foreach(string unik in arr)
+{
+    Console.WriteLine(unik);
+}
+
+
+
+    }
+
+    }
