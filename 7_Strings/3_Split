@@ -1,0 +1,13 @@
+using System;
+
+class HelloWorld {
+  static void Main() {
+  string s1="sahil negi software developer";
+  string[] s2=s1.Split(' ');
+  foreach (string s3 in s2)
+  {
+        Console.WriteLine(s3);
+  }
+    
+  }
+}
