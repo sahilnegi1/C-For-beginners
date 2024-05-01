@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+Stack <string> name = new Stack<string>(); // SortedSet maintains ascending order
+
+    name.Push("sahil");
+    name.Push("aman");
+    name.Push("RAJ");
+    name.Push("Zoya");
+    name.Push("Vishal");
+    name.Push("MAYA"); 
+
+Console.WriteLine("Stack Contains: ");  
+foreach(string unik in name)
+{
+    Console.WriteLine(unik);
+}
+
+
+Console.WriteLine();  
+name.Pop();
+
+Console.WriteLine("after Popping Stack Contains: ");  
+foreach(string unik in name)
+{
+    Console.WriteLine(unik);
+}
+
+Console.WriteLine();  
+Console.WriteLine("Peek into Stack Contains: ");  
+Console.WriteLine(name.Peek());
+
+
+    }
+
+    }
