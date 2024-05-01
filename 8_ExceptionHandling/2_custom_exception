@@ -1,0 +1,30 @@
+using System;
+public class AgeException :Exception
+{
+    public AgeException(string message):base(message)
+    {
+        
+    }
+}
+class HelloWorld {
+    public static void agecheck(int age)
+    {
+        if (age<18)
+        {
+            throw new AgeException("Age can not be less than 18!");
+        }
+    }
+  static void Main() {
+    
+    try{
+        agecheck(12);
+    }
+    catch(Exception e)
+    {
+        Console.WriteLine(e);
+    }
+    finally{
+        Console.WriteLine("finally block called!");
+    }
+  }
+}
