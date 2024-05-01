@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+LinkedList <string> name = new LinkedList<string>(); 
+
+    name.AddFirst("sahil");
+    name.AddLast("aman");
+    name.AddLast("RAJ");
+    name.Remove("Zoya");
+    name.AddLast("Vishal");
+    name.AddLast("MAYA"); 
+
+
+Console.WriteLine("LinkedList Contains = ");
+foreach(string unik in name)
+{
+    Console.WriteLine(unik);
+}
+
+
+
+    }
+
+    }
