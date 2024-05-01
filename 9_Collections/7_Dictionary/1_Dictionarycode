@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+Dictionary <int,string> name = new Dictionary<int ,string>(); 
+
+    name.Add(1,"sahil");
+    name.Add(2,"aman");
+    name.Add(3,"RAJ");
+    name.Add(4,"Zoya");
+    name.Add(5,"Vishal");
+    name.Add(6,"MAYA"); 
+
+
+Console.WriteLine("Dictionary Contains = ");
+foreach(KeyValuePair<int,string> obj in name)
+{
+    Console.WriteLine(obj);
+}
+
+
+
+    }
+
+    }
