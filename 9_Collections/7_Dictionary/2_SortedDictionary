@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public class Prog
+{
+
+public static void Main(string[] args)
+{
+SortedDictionary <int,string> name = new SortedDictionary<int ,string>(); 
+
+    name.Add(1,"sahil");
+    name.Add(2,"aman");
+    name.Add(3,"RAJ");
+    name.Add(4,"Zoya");
+    name.Add(5,"Vishal");
+    name.Add(6,"MAYA"); 
+
+SortedDictionary<string, int> sortedByName = new SortedDictionary<string, int>();
+Console.WriteLine("Dictionary Contains = ");
+foreach (KeyValuePair<int, string> kvp in name)
+        {
+            Console.WriteLine($"{kvp.Key},{kvp.Value}");
+        }
+
+
+ foreach (KeyValuePair<int, string> kvp in name)
+        {
+            sortedByName.Add(kvp.Value, kvp.Key);
+        }
+
+        Console.WriteLine("Sorted Dictionary by Name = ");
+        foreach (KeyValuePair<string, int> kvp in sortedByName)
+        {
+            Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+        }
+
+
+
+    }
+
+    }
