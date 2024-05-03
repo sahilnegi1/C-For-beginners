@@ -1,0 +1,16 @@
+using System;
+class Prog
+{
+    public void Display<T>(T msg)
+    {
+        Console.WriteLine(msg);
+    }
+}
+class HelloWorld {
+  static void Main() {
+   Prog obj = new Prog();
+   obj.Display("hello world!");
+   obj.Display(123);
+   
+  }
+}
