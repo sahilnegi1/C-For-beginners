@@ -1,0 +1,15 @@
+using System;
+delegate int calc(int n);
+class Prog
+{
+    public static int add(int n) // delegates are reference to the method it work like function to pointer
+    {
+        return 100+n;
+    }
+}
+class HelloWorld:Prog {
+  static void Main() {
+   calc obj = new calc(add);
+   Console.WriteLine(add(99));
+  }
+}
