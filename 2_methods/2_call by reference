@@ -1,6 +1,6 @@
 using System;
 class Prog
-{ static void change(ref int a)
+{ static void change(ref int a) // call by reference using ref keyword
 {
   a=122;
 }
@@ -8,7 +8,7 @@ public static void Main(string [] args)
 {
   int id =19;
   Console.WriteLine("id before calling method = "+id);
-  Prog.change(ref id);
+  Prog.change(ref id);                                  //using ref keyword
   Console.WriteLine("id after calling method = "+id); 
 }
 }
