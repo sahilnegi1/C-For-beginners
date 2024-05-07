@@ -1,0 +1,18 @@
+using System;
+delegate void calc(int n,int a);
+class Learn
+{
+    public static void add(int b,int c)
+    {
+        int a= b+c;
+        Console.WriteLine("The sum is = "+a);
+    }
+}
+class Prog:Learn
+{
+    public static void Main(string [] args)
+    {
+        calc obj = new calc(add);
+        add(12,45);
+    }
+}
