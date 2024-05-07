@@ -1,0 +1,16 @@
+using System;
+delegate void calc(int n);
+class Message
+{
+    public static void calculate(int a)
+    {
+        Console.WriteLine(a);
+    }
+}
+class HelloWorld:Message {
+   
+  static void Main() {
+  calc obj = new calc(calculate);
+  calculate(123);
+  }
+}
