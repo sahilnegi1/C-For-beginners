@@ -1,5 +1,5 @@
 using System;
-delegate void calc(int n,int a);
+delegate void calc(int n,int a); // parameter with delegates
 class Learn
 {
     public static void add(int b,int c)
