@@ -1,0 +1,10 @@
+
+using System;
+class HelloWorld {
+    public enum season{summer,winter,autumn,Rainy,blossom};
+  static void Main() {
+      
+    int x= (int)season.winter;
+    Console.WriteLine($"Index of winter = {x+1}");
+  }
+}
