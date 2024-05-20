@@ -1,0 +1,25 @@
+using System;
+using System.IO;
+
+class prog{
+    public static void Main(string [] args)
+    {
+        FileStream f = new FileStream("a.txt",FileMode.OpenOrCreate);
+        // f.WriteByte(97);
+        
+        // StreamWriter sw = new StreamWriter(f);
+        // sw.WriteLine(" we are learning file handling in c#");
+        
+        // sw.Close();
+        // f.Close();
+        
+        // Console.WriteLine("file created successfully :)");
+        
+        StreamReader sr = new StreamReader(f);
+        string line = sr.ReadLine();
+        Console.WriteLine(line);
+        
+        sr.Close();
+        f.Close();
+    }
+}
