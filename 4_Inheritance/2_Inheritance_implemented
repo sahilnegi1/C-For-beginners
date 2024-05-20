@@ -1,0 +1,36 @@
+using System;
+class Learn
+{
+   public void cat()
+   {
+       Console.WriteLine("Lion belong to cat family");
+   }
+   protected void bird()
+   {
+       Console.WriteLine("eagle belong to bird family");
+   }
+   private void elephant()
+   {
+       Console.WriteLine("elephant belong to mammal family");
+   }
+   
+  internal void dog()
+  {
+       Console.WriteLine("pug belong to dog family");
+  }
+    
+}
+class Prog:Learn
+{
+ 
+    public static void Main(string[] args)
+    {
+        Learn obj = new Learn();
+        obj.cat();
+        // obj.elephant(); // will not work as it is private access specifier
+        // obj.bird(); // only work in same class
+        obj.dog();  
+        
+        
+    }
+}
