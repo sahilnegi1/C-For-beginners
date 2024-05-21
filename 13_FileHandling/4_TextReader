@@ -1,0 +1,13 @@
+using System;
+using System.IO;
+class prog
+{
+    public static void Main(string[] args)
+    {
+        using (TextReader tr = File.OpenText("a.txt"))
+        {
+           Console.WriteLine(tr.ReadToEnd());
+        }
+       
+    }
+}
