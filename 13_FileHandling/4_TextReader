@@ -6,7 +6,8 @@ class prog
     {
         using (TextReader tr = File.OpenText("a.txt"))
         {
-           Console.WriteLine(tr.ReadToEnd());
+           Console.WriteLine(tr.ReadToEnd()); // to read full content of file
+           Console.WriteLine(tr.ReadLine()); // to read Single Line
         }
        
     }
