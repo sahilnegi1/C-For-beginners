@@ -1,0 +1,13 @@
+using System;
+public delegate void anonyfun();
+class Prog
+{
+    public static void Main(string[] args)
+    {
+        anonyfun fun = delegate()
+        {
+            Console.WriteLine("this is anonymous method");
+        };
+        fun();
+    }
+}
