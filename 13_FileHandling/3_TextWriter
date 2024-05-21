@@ -1,0 +1,14 @@
+using System;
+using System.IO;
+class prog
+{
+    public static void Main(string[] args)
+    {
+        using (TextWriter tw = File.CreateText("a.txt"))
+        {
+            tw.WriteLine("hi");
+            tw.WriteLine("we are learning c#");
+        }
+        Console.WriteLine("file created successfully");
+    }
+}
