@@ -1,0 +1,30 @@
+using System;
+using System.Threading;
+class Prog
+{
+    static void test1()
+    {
+        for(int i=0;i<100;i++)
+        {
+            Console.WriteLine("Test 1 : "+ i);
+        }
+        Console.WriteLine("going to sleep for 5 sec ");
+        Thread.Sleep(5000);
+    }
+    static void test2()
+    {
+        for(int i=0;i<100;i++)
+        {
+            Console.WriteLine("Test 2 : "+ i);
+        }
+    }
+    
+    public static void Main(string [] args)
+    {
+        Thread t1 = new Thread(test1);
+        Thread t2 = new Thread(test2);
+        
+        t1.Start();
+        t2.Start();
+    }
+}
