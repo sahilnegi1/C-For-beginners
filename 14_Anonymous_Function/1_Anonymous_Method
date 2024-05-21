@@ -1,0 +1,20 @@
+using System;
+public delegate void anonyfun();
+public delegate string greet(string name);
+class Prog
+{
+    public static void Main(string[] args)
+    {
+        anonyfun fun = delegate()
+        {
+            Console.WriteLine("this is anonymous method");
+        };
+        fun();
+      
+        
+        greet greeting = delegate(string name)
+        {return "hello "+ name;};
+        string str = greeting("sahil");
+        Console.WriteLine(str);
+    }
+}
