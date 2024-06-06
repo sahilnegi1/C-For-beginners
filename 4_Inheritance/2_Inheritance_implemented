@@ -25,10 +25,10 @@ class Prog:Learn
  
     public static void Main(string[] args)
     {
-        Learn obj = new Learn();
+        Prog obj = new Prog();
         obj.cat();
         // obj.elephant(); // will not work as it is private access specifier
-        // obj.bird(); // only work in same class
+        obj.bird();  
         obj.dog();  
         
         
